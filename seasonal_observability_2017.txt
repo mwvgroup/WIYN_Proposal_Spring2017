@@ -10,50 +10,23 @@ of
 nighttime hours during which object is at sec.z less than 3, 2, and 1.5.
 Night (and twilight) is defined by sun altitude < -18.0 degrees.
 
- Date (eve) moon      eve            cent           morn     night 
-hrs@sec.z:
-                    HA  sec.z      HA  sec.z      HA  sec.z    <3   <2   
-<1.5
-2017 Feb 10   F   -8 01  down    -2 51   2.1    +2 19   1.8   6.0   5.0   
-2.1 
-2017 Feb 25   N   -6 51  down    -1 53   1.7    +3 04   2.2   6.8   5.4   
-2.1 
-2017 Mar 11   F   -5 45  down    -1 01   1.5    +3 42   2.9   7.4   5.4   
-2.1 
-2017 Mar 27   N   -4 30   5.3    -0 03   1.4    +4 24   4.8   7.5   5.4   
-2.1 
-2017 Apr 10   F   -3 23   2.5    +0 48   1.5    +4 59  11.2   7.1   5.4   
-2.1 
-2017 Apr 25   N   -2 10   1.8    +1 44   1.6    +5 38  down   5.9   4.8   
-2.1 
-2017 May 10   F   -0 56   1.5    +2 42   2.0    +6 19  down   4.7   3.6   
-2.0 
-2017 May 25   N   +0 18   1.4    +3 42   2.9    +7 05  down   3.4   2.4   
-0.7 
-2017 Jun 8    F   +1 24   1.6    +4 39   6.3    +7 55  down   2.3   1.3   
-0.0 
-2017 Jun 23   N   +2 28   1.9    +5 41  down    +8 55  down   1.3   0.2   
-0.0 
-2017 Jul 8    F   +3 25   2.6    +6 43  down   +10 02  down   0.3   0.0   
-0.0 
-2017 Jul 22   N   +4 11   4.0    +7 40  down   +11 09  down   0.0   0.0   
-0.0 
-2017 Aug 6    F   +4 55   9.6    +8 38  down   -11 38  down   0.0   0.0   
-0.0 
-Listing done.  'f' gives tutorial, '?' prints a menu.
-r 18 58 40.8 d +43 28 07.88
-o
+ Date (eve) moon      eve            cent           morn     night hrs@sec.z:
+                    HA  sec.z      HA  sec.z      HA  sec.z    <3   <2   <1.5
+2017 Feb 10   F   -8 01  down    -2 51   2.1    +2 19   1.8   6.0   5.0   2.1 
+2017 Feb 25   N   -6 51  down    -1 53   1.7    +3 04   2.2   6.8   5.4   2.1 
+2017 Mar 11   F   -5 45  down    -1 01   1.5    +3 42   2.9   7.4   5.4   2.1 
+2017 Mar 27   N   -4 30   5.3    -0 03   1.4    +4 24   4.8   7.5   5.4   2.1 
+2017 Apr 10   F   -3 23   2.5    +0 48   1.5    +4 59  11.2   7.1   5.4   2.1 
+2017 Apr 25   N   -2 10   1.8    +1 44   1.6    +5 38  down   5.9   4.8   2.1 
+2017 May 10   F   -0 56   1.5    +2 42   2.0    +6 19  down   4.7   3.6   2.0 
+2017 May 25   N   +0 18   1.4    +3 42   2.9    +7 05  down   3.4   2.4   0.7 
+2017 Jun 8    F   +1 24   1.6    +4 39   6.3    +7 55  down   2.3   1.3   0.0 
+2017 Jun 23   N   +2 28   1.9    +5 41  down    +8 55  down   1.3   0.2   0.0 
+2017 Jul 8    F   +3 25   2.6    +6 43  down   +10 02  down   0.3   0.0   0.0 
+2017 Jul 22   N   +4 11   4.0    +7 40  down   +11 09  down   0.0   0.0   0.0 
+2017 Aug 6    F   +4 55   9.6    +8 38  down   -11 38  down   0.0   0.0   0.0
 
-This types out a summary of the observability of your object
-through the observing season.  Observability is summarized
-at new & full moon through a range of dates you specify.
-(a 24-line display holds about a 6-month range.)
 
-Give approx. starting date, yyyy mm dd, neg year exits:2017 02 01
-Give ending date for listing:2017 07 31
-You must now specify the altitude of the sun which defines twilight.
-Type -18. , or give a non-standard choice:-18
-Name of object:ASASSN-15fs
 
           *** Seasonal Observability of ASASSN-15fs ***
 
@@ -69,35 +42,21 @@ Night (and twilight) is defined by sun altitude < -18.0 degrees.
 
  Date (eve) moon      eve            cent           morn     night 
 hrs@sec.z:
-                    HA  sec.z      HA  sec.z      HA  sec.z    <3   <2   
-<1.5
-2017 Feb 10   F   +9 31  down    -9 19  down    -4 09   1.5   2.0   1.0   
-0.0 
-2017 Feb 25   N  +10 42  down    -8 21 v.low    -3 24   1.3   2.8   1.7   
-0.6 
-2017 Mar 11   F  +11 47  down    -7 29   7.6    -2 45   1.2   3.4   2.4   
-1.3 
-2017 Mar 27   N  -10 57  down    -6 30   3.5    -2 04   1.1   4.1   3.1   
-2.0 
-2017 Apr 10   F   -9 50  down    -5 39   2.4    -1 29   1.1   4.7   3.7   
-2.6 
-2017 Apr 25   N   -8 37  down    -4 43   1.8    -0 50   1.0   5.3   4.3   
-3.2 
-2017 May 10   F   -7 23   6.9    -3 46   1.4    -0 08   1.0   6.0   5.0   
-3.9 
-2017 May 25   N   -6 10   3.0    -2 46   1.2    +0 38   1.0   6.8   5.8   
-4.7 
-2017 Jun 8    F   -5 04   1.9    -1 49   1.1    +1 27   1.1   6.5   6.5   
-5.5 
-2017 Jun 23   N   -3 59   1.5    -0 46   1.0    +2 27   1.2   6.4   6.4   
-6.4 
-2017 Jul 8    F   -3 03   1.3    +0 16   1.0    +3 34   1.4   6.6   6.6   
-6.6 
-2017 Jul 22   N   -2 16   1.1    +1 12   1.1    +4 41   1.7   6.9   6.9   
-6.3 
-2017 Aug 6    F   -1 33   1.1    +2 11   1.1    +5 55   2.6   7.4   6.7   
-5.6 
-Listing done.  'f' gives tutorial, '?' prints a menu.
+                    HA  sec.z      HA  sec.z      HA  sec.z    <3   <2   <1.5
+2017 Feb 10   F   +9 31  down    -9 19  down    -4 09   1.5   2.0   1.0   0.0 
+2017 Feb 25   N  +10 42  down    -8 21 v.low    -3 24   1.3   2.8   1.7   0.6 
+2017 Mar 11   F  +11 47  down    -7 29   7.6    -2 45   1.2   3.4   2.4   1.3 
+2017 Mar 27   N  -10 57  down    -6 30   3.5    -2 04   1.1   4.1   3.1   2.0 
+2017 Apr 10   F   -9 50  down    -5 39   2.4    -1 29   1.1   4.7   3.7   2.6 
+2017 Apr 25   N   -8 37  down    -4 43   1.8    -0 50   1.0   5.3   4.3   3.2 
+2017 May 10   F   -7 23   6.9    -3 46   1.4    -0 08   1.0   6.0   5.0   3.9 
+2017 May 25   N   -6 10   3.0    -2 46   1.2    +0 38   1.0   6.8   5.8   4.7 
+2017 Jun 8    F   -5 04   1.9    -1 49   1.1    +1 27   1.1   6.5   6.5   5.5 
+2017 Jun 23   N   -3 59   1.5    -0 46   1.0    +2 27   1.2   6.4   6.4   6.4 
+2017 Jul 8    F   -3 03   1.3    +0 16   1.0    +3 34   1.4   6.6   6.6   6.6 
+2017 Jul 22   N   -2 16   1.1    +1 12   1.1    +4 41   1.7   6.9   6.9   6.3 
+2017 Aug 6    F   -1 33   1.1    +2 11   1.1    +5 55   2.6   7.4   6.7   5.6 
+
 
 
 
