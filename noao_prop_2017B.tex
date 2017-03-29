@@ -136,7 +136,7 @@
 % yourself, do so with a `\\' command at the appropriate point in
 % the title text.  Use both upper and lower case letters (NOT ALL CAPS).
 
-\title{Final Calibrations for the ``SweetSpot'' Survey}
+\title{Understanding Host Galaxy Contamination of Supernovae observed in the ``SweetSpot'' Survey}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,13 +152,19 @@
 
 \begin{abstract}
 
-We ask for one night of WIYN+WHIRC time to obtain two last host galaxy template images
+We ask for 32 nights of WIYN+WHIRC time to obtain 59 host galaxy template images
 to complete the SweetSpot program to observe Type Ia supernovae in the NIR (2012B-0500).
 The originally approved SweetSpot observed 114 Type Ia supernovae during its six semester run. 
-Host galaxy template images were gathered during the main survey and in additional time allotted in 2015B and 2016A semesters (2012B-0500, 2015B-0347). 
-We require two more host galaxy template observations to assemble all necessary reference images to allow accurate measurement of the supernova flux, and thus distance, for the supernovae observed in the last semesters of SweetSpot.
-We will also take this opportunity to complete a network of standard stars spanning a wide color range
-to improve the the calibration of WIYN's GPS-based precipitable water vapor measurement system. 
+Host galaxy template images were gathered during the main survey and in additional time allotted in 2015B, 2016A, and 2017A semesters (2012B-0500, 2015B-0347). 
+We require host galaxy template observations to assemble all necessary reference images to allow accurate measurement of the supernova flux, and thus distance, for the supernovae observed in the last semesters of SweetSpot.
+We previously only sought templates for supernovae that we deemed to have heavy contamination of host galaxy flux via individual image inspection.
+However, we are unable to make quantitative arguments for the level of host galaxy contamination for our full supernova sample.
+In order to answer this question, we request to observe a suite of fields that contained supernovae with various levels of contamination.   
+This includes high redshift supernovae in galaxies with small angular size or low surface brightness.
+To be more precise in all of our measurements, we also request to observe all remaining supernovae without templates, which corresponds to $51\%$ of the total SweetSpot data set.
+
+%We will also take this opportunity to complete a network of standard stars spanning a wide color range
+%to improve the the calibration of WIYN's GPS-based precipitable water vapor measurement system. 
 
 \end{abstract}
 
@@ -235,28 +241,28 @@ to improve the the calibration of WIYN's GPS-based precipitable water vapor meas
 \begin{obsrun}
 \telescope{WIYN}
 \instrument{WHIRC}
-\numnights{1}
+\numnights{11}
 \lunardays{bright}
-\optimaldates{Apr - May}
-\acceptabledates{Mar - May}
+\optimaldates{Sep-Jan}
+\acceptabledates{Sep-Jan}
 \end{obsrun}
 
 \begin{obsrun}
-\telescope{}
-\instrument{}
-\numnights{}
-\lunardays{}
-\optimaldates{}
-\acceptabledates{}
+\telescope{WIYN}
+\instrument{WHIRC}
+\numnights{17}
+\lunardays{bright}
+\optimaldates{Sep-Jan}
+\acceptabledates{Sep-Jan}
 \end{obsrun}
 
 \begin{obsrun}
-\telescope{}
-\instrument{}
-\numnights{}
-\lunardays{}
-\optimaldates{}
-\acceptabledates{}
+\telescope{WIYN}
+\instrument{WHIRC}
+\numnights{4}
+\lunardays{bright}
+\optimaldates{Jan}
+\acceptabledates{Jan}
 \end{obsrun}
 
 \begin{obsrun}
@@ -294,14 +300,17 @@ to improve the the calibration of WIYN's GPS-based precipitable water vapor meas
 % are requesting runs in an "either/or" situation, e.g. run 1 or run 2, 
 % but not both. This is also the place to advise us of any special 
 % constraints which affect the scheduling of your observing run (e.g. 
-% "schedule run #1 before run #2" or "run dates must be coordinated 
+% "sopooochedule run #1 before run #2" or "run dates must be coordinated 
 % with HST observations").
 % 
 % Please limit your text to six lines on the printed copy.
 
 \unusabledates{
-The two targets are at very different locations on the sky but can be observed on one well placed night in April or May. 
-However, they may also be done on 2 separate partial nights, including T$\&$E nights.}
+Run 1 is a list of priority objects that we need to observe to make quantitative estimations on when a supernova needs a host galaxy template.
+Run 2 is a full list of unobserved host galaxies (Not including Run 1, Run 3, or previously observed hosts).
+Run 3 contains host galaxies whose supernovae were observed in a Spring semester and are only observable in January.
+We can make use of T$\&$E nights throughout the semester.
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -368,13 +377,20 @@ However, they may also be done on 2 separate partial nights, including T$\&$E ni
 \name{Kara Ponder}
 \affil{University of Pittsburgh}
 \email{kap146@pitt.edu}
+\invstatus{G}
+\end{CoI}
+
+\begin{CoI}
+\name{Daniel Perrefort}
+\affil{University of Pittsburgh}
+\email{DJP81@pitt.edu}
 \invstatus{T}
 \end{CoI}
 
 \begin{CoI}
-\name{Tom Matheson}
-\affil{NOAO}
-\email{matheson@noao.edu}
+\name{Lluis Galbany}
+\affil{University of Pittsburgh}
+\email{llgalbany@pitt.edu}
 \invstatus{P}
 \end{CoI}
 
@@ -382,6 +398,13 @@ However, they may also be done on 2 separate partial nights, including T$\&$E ni
 \name{Dick Joyce}
 \affil{NOAO}
 \email{joyce@noao.edu}
+\invstatus{P}
+\end{CoI}
+
+\begin{CoI}
+\name{Tom Matheson}
+\affil{NOAO}
+\email{matheson@noao.edu}
 \invstatus{P}
 \end{CoI}
 
@@ -479,9 +502,9 @@ As a result, unlike optical Type Ia SNe, which are {\em standardizable} candles,
  NIR SNe Ia
 appear to be truly {\em standard} candles at the $\sim0.10$--$0.15$ mag
 level ($\sim5$--$7\%$ in distance)
-\cite{krisciunas04a,krisciunas05a,wood-vasey08,folatelli10,weyant11,barone-nugent12,kattner12}.
+\cite{krisciunas04a,krisciunas05a,wood-vasey08,folatelli10,weyant14,barone-nugent12,kattner12}.
 
-Motivated by this opportunity, the ``SweetSpot'' (PI Wood-Vasey; \cite{weyant11}) and the ``CSP-II'' (PI M. Phillips; \cite{contreras10,stritzinger11}) programs were undertaken to build a comprehensive sample of SNeIa observed in the NIR in the nearby Hubble flow.
+Motivated by this opportunity, the ``SweetSpot'' (PI Wood-Vasey; \cite{weyant14}) and the ``CSP-II'' (PI M. Phillips; \cite{contreras10,stritzinger11}) programs were undertaken to build a comprehensive sample of SNeIa observed in the NIR in the nearby Hubble flow.
 The scientific goals of SweetSpot are:
 {\bf (1)}
 Testing if SNeIa are better standard candles in the NIR.
@@ -492,22 +515,38 @@ Investigating the nature of SNIa host galaxies using NIR and optical observation
 {\bf (4)}
 Connecting local flows and motions with SNIa NIR to galaxies and convergence.
 
-Throughout the SweetSpot program, we have devoted time to obtain needed host galaxies templates for SNeIa from the previous year.  
-We requested 6 additional nights in the 2015B--2016A semesters to finish host galaxy templates from the last original SweetSpot year of 2014B-2015A.  
-We obtained 12 host galaxy template observations during this awarded extension time, but unfortunately a bit of poor weather in 2016A prevented us from finishing the last 2 host galaxy observations.
-We here request one more night of WIYN+WHIRC time to observe the two host galaxies from the final year of SweetSpot (2014B--2015A).
-Without these final host galaxy template references, we will not be able to produce lightcurves for these two supernovae.
-
 Obtaining final host galaxy images free from the contamination of the SN light will be critical in obtaining accurate apparent brightness measurements for the SN light curve.  These observations will also help provide measurements of the host galaxy stellar mass along with detailed morphology.
 
-{\bf Improved Calibration:}\\
-A dual-band GPS system was installed at KPNO in 2015 March to measure the variable amount of precipitable water vapor (PWV) in the atmosphere.  
-This system is a key part of determining the full effective system transmission function in the NIR (and in general for $\lambda>700$~nm), where the edges of the filter bandpasses can be affected by the variable absorption lines from water vapor.  
-Observing the same fields for these 2 supernovae and the standard SweetSpot calibration star fields with the dual-band GPS system running for another semester will provide important information to tie down our WIYN+WHIRC magnitudes of the stars in the SN fields we use for calibration.  
-The supernova host galaxy observations should take 6 total hours.
-We plan to use the remaining few hours in the requested night to observe additional Persson standard stars that span a wider range of colors than the select handful we used for consistency across all of the nights.
-This greater color range will help calibrate the color term of the WIYN+WHIRC system with the additional benefit of known the water vapor absorption in the NIR during these nights.
-We will use the focus of spending this additional time with the system to provide to all KPNO users the water absorption spectral response function based on the observations of the GPS PWV system throughout the time it has been on the mountain.
+Throughout the SweetSpot program, we have devoted time to obtain needed host galaxies templates for SNeIa from the previous year.  
+We requested 6 additional nights in the 2015B--2016A semesters to finish host galaxy templates from the last original SweetSpot year of 2014B-2015A.  
+We obtained 12 host galaxy templates during this awarded extension time, but unfortunately a bit of poor weather in 2016A prevented us from finishing the last 2 host galaxy observations.
+We were able to observe these 2 templates in 2017A after a second half night became available in March.
+
+In February 2017, we submitted the first data release of SweetSpot: ``The First Data Release from SweetSpot: 74 Supernovae in 36 Nights on WIYN+WHIRC"\cite{weyant17} for publication in the Astrophysical Journal. 
+We are presenting 34 lightcurves out of the 74, because the other 40 supernova are heavily contaminated by their host galaxy. 
+Our argument was that by visual inspection we did not find a significant amount of host galaxy flux at the site of the supernova.
+However, our referee report notes that we should be able to quantitatively justify when we do and do not need a host galaxy template. 
+We do not currently have enough data to answer this question. 
+We need a wide range of host galaxy templates to quantify this especially for supernova at higher redshifts where we can barely see any flux from the host galaxy.
+These higher redshift supernovae are key to probing the smooth Hubble flow.
+
+We would like to explore these different templates to justify when we need or do not need host galaxy templates (see sample in Observing Run 1).
+Moreover, to be able to remove any possible host galaxy flux and give proper errors on our measured fluxes, we would like to observe host galaxy templates for all of our SweetSpot supernovae.
+We currently need 59 templates which accounts for $51\%$ of our total sample. 
+
+Additionally, 4 of these supernovae are heavily contaminated by their host but had not previously prioritized 
+host galaxy template observations due to their sparsely sampled lightcurves.
+Without these host galaxy template references, we will not be able to produce lightcurves for these 4 supernovae.
+
+
+
+%{\bf Improved Calibration:}\\
+%A dual-band GPS system was installed at KPNO in 2015 March to measure the variable amount of precipitable water vapor (PWV) in the atmosphere.  
+%This system is a key part of determining the full effective system transmission function in the NIR (and in general for $\lambda>700$~nm), where the edges of the filter bandpasses can be affected by the variable absorption lines from water vapor.  
+%Observing the same fields for these XX (how many observed since March 2015?) supernovae and the standard SweetSpot calibration star fields with the dual-band GPS system running for another semester will provide important information to tie down our WIYN+WHIRC magnitudes of the stars in the SN fields we use for calibration.  
+%We plan to observe more Persson standard stars that span a wider range of colors than the select handful we used for consistency across the nights during the regular survey.
+%This greater color range will help calibrate the color term of the WIYN+WHIRC system with the additional benefit of known the water vapor absorption in the NIR during these nights.
+%We will use this additional time with the system to provide to all KPNO users the water absorption spectral response function based on the observations of the GPS PWV system throughout the time it has been on the mountain.
 
 
 
@@ -572,8 +611,11 @@ We will use the focus of spending this additional time with the system to provid
 \bibitem{stritzinger11}
 {Stritzinger}, M., et al. (2011), {\it AJ}, 142, 156.
 
-\bibitem{weyant11}
-Weyant, A. et al. (2011) {\it ApJ}, 784, 105.
+\bibitem{weyant14}
+Weyant, A. et al. (2014) {\it ApJ}, 784, 105.
+
+\bibitem{weyant17}
+Weyant, A. et al. (2017) {\it ApJ submitted}, arXiv:1703.02402.
 
 \bibitem{wood-vasey07}
 {Wood-Vasey}, W.~M., et al. (2007) {\it ApJ}, 666, 694
@@ -606,20 +648,25 @@ Wood-Vasey, W.~M., et al. (2008) {\it ApJ}, 689, 377.
 
 \expdesign
 
-We request a total of 1 night for WHIRC observations of host galaxies of SNeIa and standard stars.  
+We request a total of 32 nights for WHIRC observations of host galaxies of SNeIa and standard stars.  
 
-We will observe the 2 host galaxies from SweetSpot that will
+We will observe the 4 host galaxies from SweetSpot that will
 require template observations due to significant inferred host galaxy light contributions at the location of the SNeIa.
-We are only requiring one filter per object. 
-We have gathered the other 1--2 filters in previous semesters but were unable to observe these two due to poor weather in 2016A. 
+These were not previously taken because they only have one lightcurve point; however, they are still useful in our dataset once they have templates.
+We will observe 15 host galaxies that will aid in our understanding and calculations of when a host galaxy template is needed. 
+The other 40 hosts consist of the full sample of SweetSpot that are not obviously heavily contaminated. 
+However to get the most precise measurements of flux, we still need to observe their host galaxies.  
 
-We will also observe several standard stars in all 3 filters throughout the night.
+We will also observe several Persson standard stars in all 3 filters throughout the night.
 
-These observations will be undertaken with WHIRC in $J$, $H$, and $K_s$
+These observations will be undertaken with WHIRC in $J$, $H$, and $K_s$ depending on which filters were used for supernova observations
 and provide reference flux values critical to obtaining
 SN lightcurves and improved PWV calibration.  
+We will also use WTTM if available to improve the FWHM.
+
 The host galaxy observations will also generate
 maps of the host galaxy at the high resolutions offered by the WIYN+WHIRC system for general study of detailed NIR morphology and host galaxy mass.
+For host galaxies also observed with an integral field unit, it will also help us model the old population in these galaxies and put constraints on $R_V$. 
 
 % PROPRIETARY PERIOD
 % 
@@ -663,7 +710,11 @@ maps of the host galaxy at the high resolutions offered by the WIYN+WHIRC system
 
 1. These observations will complement the data from other nearby supernova groups such as KAIT, the CfA Supernova group, and the Carnegie Supernova Project to produce the most complementary data sets to enable explorations of optical vs. NIR distance estimation, color, and host galaxy properties.
 The first steps toward higher redshift are currently being undertaken on {\it HST} through the RAISIN project (PI R. Kirshner).
-Farther in the future and going farther in the past, the nearby NIR SNIa set will provide a reference anchor for future higher-redshift restframe NIR work with {\it JWST} and {\it WFIRST}.
+Farther in the future and going farther in the past, the nearby NIR SNIa set will provide a reference anchor for future higher-redshift restframe NIR work with {\it JWST} and {\it WFIRST}. \\
+In order to examine global and local host galaxy properties to search for correlations with how bright the supernova was at time of maximum, we have observed many SweetSpot host galaxies with integral field units (IFUs).
+The All-weather MUse Supernova Integral field Nearby Galaxies (AMUSING) survey (PI: L. Galbany) has dedicated their fifth survey to observing supernova with NIR light curves including 13 SweetSpot supernova that still need host galaxy templates. 
+The AMUSING survey is conducted using the MUSE IFU mounted on the VLT and already has several semesters of host galaxy observations of many different kinds of supernova. 
+With Centro Astronomico Hispano Aleman (CAHA) PMAS+PPAK IFU (PI L. Galbany), the PI of SweetSpot and two Co-Is (L. Galbany and K. Ponder) have been awarded roughly 5 nights so far to observe SweetSpot host galaxies in the northern sky. \\
 
 2. The PI is currently funded by NSF AST-1028162 to carry out the SweetSpot program and related nearby SNIa work.  This grant will continue to support graduate students to do the observations, analysis and publications for these proposed observations.
 
@@ -702,14 +753,18 @@ Farther in the future and going farther in the past, the nearby NIR SNIa set wil
 \thepast
 
 This proposal will provide the final data necessary to complete our NOAO Survey 
-program ``Type Ia Supernovae in the Near-Infrared: A Three-Year Survey toward a One Percent Distance Measurement with WIYN+WHIRC'' \relatedwork{2012B-0500},
-and a final installment of WHIRC host galaxy templates that went uncompleted in the follow up program
-``Final Host Galaxy Observations for `SweetSpot': Calibrating the Supernova Host Galaxy Light and Environment''
-\relatedwork{2015B-0347}.
+program ``Type Ia Supernovae in the Near-Infrared: A Three-Year Survey toward a One Percent Distance Measurement with WIYN+WHIRC'' \relatedwork{2012B-0500}.
 We observed 114 SNeIa and 1 SN Ibn (SN 2015G) during the main program.
-The first results from this Survey were published in \cite{weyant11}.  
-A first data release paper with 74 SNeIa and 31 light curves is currently in preparation and anticipated to be submitted for publication this fall.
-Final data reductions of all targets have already begun in preparation for the second and full data release
+The first results from this Survey were published in \cite{weyant14}.  
+A first data release paper with 74 SNeIa and 34 light curves was submitted to the Astrophysical Journal and posted to the arXiv in February 2017, and we are currently working through the first referee report \cite{weyant17}.
+Final data reductions of all targets have already begun in preparation for the second and full data release.
+Under the proposal ID of the original survey  \relatedwork{2012B-0500}, we have collected host galaxy templates in 2015B, 2016A, and 2017A.
+
+In 2015B, we had another proposal called  ``Final Host Galaxy Observations for `SweetSpot': Calibrating the Supernova Host Galaxy Light and Environment'' \relatedwork{2015B-0347}.
+The goal in this proposal was not only to observe more host galaxy templates, but also to use the IFU HexPak mounted on the WIYN to observe spatially resolved spectra of host galaxies. 
+We successfully observed 32 host galaxies and the data reduction is nearly complete. 
+7 of these galaxies do not have host galaxy templates. 
+These templates will help us constrain the older populations in the host galaxy and also help us measure the amount of flux from the host galaxy for more precise errors.
 
 PI Wood-Vasey was involved in the 6-year ESSENCE Supernova Survey (PI Suntzeff) that used the CTIO 4.0-m Blanco telescope to discover and study 213 Type Ia Supernovae to measure the dark energy equation-of-state during the past 8 billion years.  This survey has so far led to 10 refereed publications that have been cited a combined 1,657 times.
 
@@ -758,18 +813,23 @@ K. Krisciunas et al. (2005), AJ, 130, pp. 2453-2472. \\  % 42
 
 \technicaldescription
 
-We need to obtain 2 host galaxy references. 
+Run 1 consists of host galaxy templates that will help is to quantitatively estimate when a host galaxy needs a template and when it does not.
+It also includes host galaxies for supernovae that were heavily contaminated by their hosts, but did not make our previous quality cuts for getting a host galaxy template, as well as host galaxies that were observed with HexPak but did not previously get templates.
+
+We need to obtain 18 host galaxy references. 
 Observations need to be at least 3 times as long as the longest exposure of the field when the supernova was live (assuming 1\arcsec\ seeing).
 Our template observations need have better signal to noise than our supernova observations for accurate template subtractions. 
-LSQ14xi was observed in J for 41 minutes:  its host galaxy needs 123 minutes which translates to five 5x5x15\arcsec\ scripts yielding 125 open shutter minutes.
-ASASSN-15fs was observed in Ks for 16 minutes: its host galaxy needs 48 minutes which translates to two 5x5x15\arcsec\ scripts yielding 50 open shutter minutes.
-Each dither script takes $\sim$ 33 minutes to run for a total of 3.8 hours, plus $\sim40$ minutes to set up both fields (check focus, position, use WTTM if possible).
-We need roughly an hour and a half for standard star observations.
-This totals to approximately 6 hours or 1 night in April or May.
-Any extra time can be filled with standard star observations.
+See table below for total exposure times ($\#$ of exp. = total exposure time since each image is 60 seconds).
+All of these targets will use the 5x5x15" dither script which take $\sim$ 33 minutes to run.
+This sample needs 80 hours on sky to run the scripts. 
+We then add in 90 minutes per night to observe standard stars and to set up on different targets. 
+Assuming on average we have 9.5 hours in a night, we need 10 nights on the telescope. 
+We then add a 10$\%$ contingency for issues setting up or any unforeseeable problems to give the final number of 11 nights. 
 
 Nights do not need to be photometric. 
 The night sky is bright in the NIR regardless of the phase of the Moon; therefore, observations during bright time are acceptable. 
+
+In the comments section of the target table below, we identify which supernova fields have been observed with HexPak and which have high levels of contamination (HC).
 
 % Several instrument configuration parameters are requested.  Fill
 % these in as appropriate for each run. 
@@ -820,8 +880,8 @@ The night sky is bright in the NIR regardless of the phase of the Moon; therefor
 %  \targetsra{14 to 17}
 %  \targetsdec{-10 to 35}
 
-\targetsra{12 to 19}			% RA range in hours
-\targetsdec{-14 to +44}			% Dec. range in degrees
+\targetsra{00 to 23}			% RA range in hours
+\targetsdec{-14 to +46}			% Dec. range in degrees
 
 
 
@@ -865,33 +925,511 @@ The night sky is bright in the NIR regardless of the phase of the Moon; therefor
 % continue a table across a page you must start a new table.  Use
 % /clearpage before the \begin{targettable} command for the new table.
 %
-\begin{targettable}{}
+\begin{targettable}{Run 1 - Priority Targets}
 \objid{001}           % specify a 3-digit number for each target.
-\object{LSQ14xi}          % 20 characters maximum
-\ra{12:30:41.2}              % e.g., xx:xx:xx.x
-\dec{-13:46:22}             % e.g., +-xx:xx:xx.x
-\epoch{2000.00}           % e.g., 1950.3
-\magnitude{13.6}
-\filter{J}
+\object{PTF13ddg}          % 20 characters maximum
+\ra{00:47:50.83}              % e.g., xx:xx:xx.x
+\dec{+31:49:17.5}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{200}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{002}           % specify a 3-digit number for each target.
+\object{PTF13dad}          % 20 characters maximum
+\ra{01:48:08.39}              % e.g., xx:xx:xx.x
+\dec{+37:33:29.1}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{150,150}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{003}           % specify a 3-digit number for each target.
+\object{iPTF13ebh}          % 20 characters maximum
+\ra{02:21:59.98}              % e.g., xx:xx:xx.x
+\dec{+33:16:13.7}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{25,25,25}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HexPak}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{004}           % specify a 3-digit number for each target.
+\object{LSQ13cwp}          % 20 characters maximum
+\ra{04:03:50.662}              % e.g., xx:xx:xx.x
+\dec{-02:39:18.57}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{125,125}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{005}           % specify a 3-digit number for each target.
+\object{PSNJ08351668}          % 20 characters maximum
+\ra{08:35:16.68}              % e.g., xx:xx:xx.x
+\dec{+48:19:01.1}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{75,125,50}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{006}           % specify a 3-digit number for each target.
+\object{PS15mb}          % 20 characters maximum
+\ra{08:59:40.20}              % e.g., xx:xx:xx.x
+\dec{+15:11:12.5}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{125,75}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HexPak}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{007}           % specify a 3-digit number for each target.
+\object{ASASSN-15hg}          % 20 characters maximum
+\ra{09:53:48.62}              % e.g., xx:xx:xx.x
+\dec{+09:11:37.8}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{50,50,50}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HexPak}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{008}           % specify a 3-digit number for each target.
+\object{SNhunt263}          % 20 characters maximum
+\ra{09:08:42.48}              % e.g., xx:xx:xx.x
+\dec{+44:48:13.2}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{150,75,125}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HexPak}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{009}           % specify a 3-digit number for each target.
+\object{LSQ14aeg}          % 20 characters maximum
+\ra{10:19:36.79}              % e.g., xx:xx:xx.x
+\dec{+19:33:20.3}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{125,75}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HexPak}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{010}           % specify a 3-digit number for each target.
+\object{PSNJ10292799}          % 20 characters maximum
+\ra{10:29:27.99}              % e.g., xx:xx:xx.x
+\dec{+22:00:46.8}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{150,150}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HexPak}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{011}           % specify a 3-digit number for each target.
+\object{iPTF15xi}          % 20 characters maximum
+\ra{12:12:27.85}              % e.g., xx:xx:xx.x
+\dec{+32:09:54.5}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{150,150}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{012}           % specify a 3-digit number for each target.
+\object{SN2012bm}          % 20 characters maximum
+\ra{13:05:45.621}              % e.g., xx:xx:xx.x
+\dec{+46:27:52.39}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{25,25}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HC}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{013}           % specify a 3-digit number for each target.
+\object{SN2013bo}          % 20 characters maximum
+\ra{13:17:29.19}              % e.g., xx:xx:xx.x
+\dec{+42:44:29.6}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{75,75}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+
+\objid{014}           % specify a 3-digit number for each target.
+\object{SN2013fn}          % 20 characters maximum
+\ra{21:00:23.673}              % e.g., xx:xx:xx.x
+\dec{-14:29:52.42}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{50,50,50}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HexPak}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{015}           % specify a 3-digit number for each target.
+\object{LSQ14fmg}          % 20 characters maximum
+\ra{22:16:46.1}              % e.g., xx:xx:xx.x
+\dec{+15:21:14.1}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{150,125}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+
+\objid{016}           % specify a 3-digit number for each target.
+\object{CSS121006}          % 20 characters maximum
+\ra{23:28:54.52}              % e.g., xx:xx:xx.x
+\dec{+08:54:51.4}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{H}
 \exptime{60}         % in seconds PER EXPOSURE
 \nexposures{125}      % Number of exposures
 \moondays{14}        % Days from new moon, use a number 0-14
 \skycond{phot}         % "spec" or "phot"
 \seeing{1}          % max allowable PSF FWHM (arcsecs)
 \obscomment{}      % 20 characters maximum - REQUIRED COMMAND
-\objid{002}           % specify a 3-digit number for each target.
-\object{ASASSN-15fs}          % 20 characters maximum
-\ra{18:58:40.8 }              % e.g., xx:xx:xx.x
-\dec{+43:28:08}             % e.g., +-xx:xx:xx.x
-\epoch{2000.00}           % e.g., 1950.3
-\magnitude{12} % Observed in 2MASS
-\filter{Ks}
+
+\objid{017}           % specify a 3-digit number for each target.
+\object{ASASSN-14iu}          % 20 characters maximum
+\ra{09:10:39.53}              % e.g., xx:xx:xx.x
+\dec{+50:22:48.26}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H,Ks}
 \exptime{60}         % in seconds PER EXPOSURE
-\nexposures{50}      % Number of exposures
+\nexposures{25,25,25}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HC}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{018}           % specify a 3-digit number for each target.
+\object{iPTF14gnl}          % 20 characters maximum
+\ra{00:23:48.33}              % e.g., xx:xx:xx.x
+\dec{-03:51:27.9}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{} % Observed in 2MASS
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{150,150}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HC}      % 20 characters maximum - REQUIRED COMMAND
+
+
+
+\end{targettable}
+
+\runid{2}{WIYN/WHIRC}
+\technicaldescription
+
+Run 2 includes all other supernovae that do not have host galaxy templates. These are fields that we did not deem as a priority to determine how to quantitatively measure when a supernova needs a host galaxy template. 
+
+We need to obtain 31 host galaxy references. 
+Observations need to be at least 3 times as long as the longest exposure of the field when the supernova was live (assuming 1\arcsec\ seeing).
+Our template observations need have better signal to noise than our supernova observations for accurate template subtractions. 
+See table below for total exposure times ($\#$ of exp. = total exposure time since each image is 60 seconds).
+Most of these targets will use the 5x5x15" dither script which take $\sim$ 33 minutes to run. Some may use 4x4x20" dither which takes roughly 20 minutes to run. 
+This sample needs 122 hours on sky to run the scripts. 
+We then add in 90 minutes per night to observe standard stars and to set up on different targets. 
+Assuming on average we have 9.5 hours in a night, we need 15.5 nights on the telescope. 
+We then add a 10$\%$ contingency for issues setting up or any unforeseeable problems to give 17 nights. 
+
+Nights do not need to be photometric. 
+The night sky is bright in the NIR regardless of the phase of the Moon; therefore, observations during bright time are acceptable. 
+
+\begin{configuration}
+\filters{J, H, Ks}
+\grating{}
+\order{}
+\crossdisperser{}
+\slit{}
+\multislit{}
+\wstart{}
+\wend{}
+\cable{}
+\corrector{}
+\collimator{}
+\adc{}
+\end{configuration}
+\targetsra{00 to 23}			% RA range in hours
+\targetsdec{-36 to +69}			% Dec. range in degrees
+\specialrequest    % remove and not use for HET runs
+\begin{targettable}{Run 2 - All SweetSpot fields not yet observed}
+\objid{}           % specify a 3-digit number for each target
+\object{}          % 20 characters maximum
+\ra{}              % e.g., xx:xx:xx.x
+\dec{}             % e.g., +-xx:xx:xx.x
+\epoch{}           % e.g., 1950.3
+\magnitude{}
+\filter{}
+\exptime{}         % in seconds PER EXPOSURE
+\nexposures{}      % Number of exposures
+\moondays{}        % Days from new moon, use a number 0-14
+\skycond{}         % "spec" or "phot"
+\seeing{}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+\end{targettable}
+
+\runid{3}{WIYN/WHIRC}
+\technicaldescription
+
+Run 3 includes host galaxies that are only observable for the month of January. 
+These fields were originally observed in Spring semesters. All other targets have at least 2 months of visibility.
+
+We need to obtain 11 host galaxy references. 
+Observations need to be at least 3 times as long as the longest exposure of the field when the supernova was live (assuming 1\arcsec\ seeing).
+Our template observations need have better signal to noise than our supernova observations for accurate template subtractions. 
+See table below for total exposure times ($\#$ of exp. = total exposure time since each image is 60 seconds).
+All of these targets will use the 5x5x15" dither script which take $\sim$ 33 minutes to run. 
+This sample needs 28.7 hours on sky to run the scripts. 
+We then add in 90 minutes per night to observe standard stars and to set up on different targets. 
+Assuming on average we have 10.5 hours in a night, we need 3.5 nights on the telescope. 
+We then add a 10$\%$ contingency for issues setting up or any unforeseeable problems to give 4 nights. 
+
+Nights do not need to be photometric. 
+The night sky is bright in the NIR regardless of the phase of the Moon; therefore, observations during bright time are acceptable. 
+
+In the comments section of the target table below, we identify which have high levels of contamination (HC).
+
+\begin{configuration}
+\filters{J, H, Ks}
+\grating{}
+\order{}
+\crossdisperser{}
+\slit{}
+\multislit{}
+\wstart{}
+\wend{}
+\cable{}
+\corrector{}
+\collimator{}
+\adc{}
+\end{configuration}
+\targetsra{12 to 16}			% RA range in hours
+\targetsdec{-17 to +61}			% Dec. range in degrees
+\specialrequest    % remove and not use for HET runs
+\begin{targettable}{Run 3 - Targets only available in January}
+\objid{001}           % specify a 3-digit number for each target
+\object{SN2011jh}          % 20 characters maximum
+\ra{12:47:14.42}              % e.g., xx:xx:xx.x
+\dec{-10:03:47.2}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{50,50}      % Number of exposures
 \moondays{14}        % Days from new moon, use a number 0-14
 \skycond{phot}         % "spec" or "phot"
 \seeing{1}          % max allowable PSF FWHM (arcsecs)
 \obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{002}           % specify a 3-digit number for each target
+\object{SN2011iy}          % 20 characters maximum
+\ra{13:08:58.38}              % e.g., xx:xx:xx.x
+\dec{-15:31:04.0}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{50,50}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{003}           % specify a 3-digit number for each target
+\object{PTF11qri}          % 20 characters maximum
+\ra{12:47:06.276}              % e.g., xx:xx:xx.x
+\dec{-06:19:49.46}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{75,75}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{004}           % specify a 3-digit number for each target
+\object{PTF11qri}          % 20 characters maximum
+\ra{12:47:06.276}              % e.g., xx:xx:xx.x
+\dec{-06:19:49.46}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{75,75}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{005}           % specify a 3-digit number for each target
+\object{SN2012bo}          % 20 characters maximum
+\ra{12:50:45.215}              % e.g., xx:xx:xx.x
+\dec{-14:16:07.69}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{25,25}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{006}           % specify a 3-digit number for each target
+\object{SN2013cs}          % 20 characters maximum
+\ra{13:15:14.839}              % e.g., xx:xx:xx.x
+\dec{-17:57:55.24}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{25,25,25}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{007}           % specify a 3-digit number for each target
+\object{SN2013bt}          % 20 characters maximum
+\ra{14:21:15.185}              % e.g., xx:xx:xx.x
+\dec{+61:34:15.42}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{75,100}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{008}           % specify a 3-digit number for each target
+\object{PS1-14ra}          % 20 characters maximum
+\ra{14:41:28.44}              % e.g., xx:xx:xx.x
+\dec{+09:25:58.7}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{75,50}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{009}           % specify a 3-digit number for each target
+\object{PSNJ15024996}          % 20 characters maximum
+\ra{15:02:49.96}              % e.g., xx:xx:xx.x
+\dec{+48:47:06.2}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{75,50,75}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{010}           % specify a 3-digit number for each target
+\object{PS15sv}          % 20 characters maximum
+\ra{16:13:11.74}              % e.g., xx:xx:xx.x
+\dec{+01:35:31.1}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H,Ks}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{100,100,50}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{HC}      % 20 characters maximum - REQUIRED COMMAND
+
+\objid{011}           % specify a 3-digit number for each target
+\object{SN2012bp}          % 20 characters maximum
+\ra{16:18:12.451}              % e.g., xx:xx:xx.x
+\dec{+36:28:51.87}             % e.g., +-xx:xx:xx.x
+\epoch{2000}           % e.g., 1950.3
+\magnitude{}
+\filter{J,H}
+\exptime{60}         % in seconds PER EXPOSURE
+\nexposures{25,50}      % Number of exposures
+\moondays{14}        % Days from new moon, use a number 0-14
+\skycond{phot}         % "spec" or "phot"
+\seeing{1}          % max allowable PSF FWHM (arcsecs)
+\obscomment{}      % 20 characters maximum - REQUIRED COMMAND
+
+
+
 \end{targettable}
 
 
