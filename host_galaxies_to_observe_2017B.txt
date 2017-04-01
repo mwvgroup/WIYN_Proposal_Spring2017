@@ -1,0 +1,73 @@
+SN                       Semester    RA            Dec       z        ET_J  ET_H  ET_Ks  Observability              Notes   
+# first tier priority
+iPTF14gnl                2014B  00:23:48.33   -03:51:27.9   0.05      150   150   NA     ``Aug-Dec"                 ``1 LC pt, heavy contamination"
+PTF13ddg                 2013B  00:47:50.83   +31:49:17.5   0.084     NA    200+  NA     ``late July - Jan"         ``exptime~150-300. 3 LC,low surface brightness gal"
+PTF13dad                 2013B  01:48:08.39   +37:33:29.1   0.086     150   150   NA     ``late July - Jan"         ``3 LC pt, low surface brightness gal"
+iPTF13ebh                2013B  02:21:59.98   +33:16:13.7   0.01327   25    25    25     ``late July - Jan"         ``HexPak, contamination"
+LSQ13cwp                 2013B  04:03:50.662  -02:39:18.57  0.067     125   150   NA     ``Sept - Jan"              ``light contamination"
+PSNJ08351668+4819011     2014B  08:35:16.68   +48:19:01.1   0.043     75    125   50     ``Mar-May, Oct-Jan"        ``light contamination"
+PS15mb                   2015A  08:59:40.20   +15:11:12.5   0.029     125   75    NA     ``Mar-Apr, Nov-Jan"        ``HexPak, light contamination"    
+SNhunt263                2014B  09:08:42.48   +44:48:13.2   0.0268    150   75    125    ``Mar-mid May,mid Oct-Jan" ``HexPak, light contamination"
+ASASSN-15ho              2015A  09:09:23.89   -04:43:30.10  0.0460    75    75    NA     ``Mar-Apr,Nov-Jan"         ``HexPak, light contamination"
+ASASSN-14iu              2014B  09:10:39.53   +50:22:48.26  0.016855  25    25    25     ``Mar-early May, Oct-Jan"  ``1 LC pt, heavy contamination"
+ASASSN-15hg              2015A  09:53:48.62   +09:11:37.8   0.029771  50    50    50     ``Mar-mid May,mid Nov-Jan" ``HexPak, light contamination"
+LSQ14aeg                 2014A  10:19:36.79   +19:33:20.3   0.06      125   75    NA     ``Mar-mid May,mid Nov-Jan" ``HexPak, light contamination"
+PSNJ10292799+2200468     2014B  10:29:27.99   +22:00:46.8   0.05445   150   150   NA     ``Mar-May,mid Nov-Jan"     ``HexPak"
+iPTF15xi                 2015A  12:12:27.85   +32:09:54.5   0.04      150   150   NA     ``Mar-Jun, Dec-Jan"        ``low surface brightness gal"
+SN2012bm                 2012A  13:05:45.621  +46:27:52.39  0.02480   25    25    NA     ``Mar-Jul, Dec-Jan"        ``heavy contamination"
+SN2013bo                 2013A  13:17:29.19   +42:44:29.6   0.036     75    75    NA     ``Mar-Jul, Dec-Jan"        ``contamination"
+PS15sv                   2015A  16:13:11.74   +01:35:31.1   0.033     100   100   50     ``Mar-Aug, Jan"            ``heavy contamination, 91T"
+SN2013fn                 2013B  21:00:23.673  -14:29:52.42  0.0270    50    50    50     ``late Jun-Oct"            ``HexPak, light contamination"
+LSQ14fmg                 2014B  22:16:46.1    +15:21:14.1   0.06      150   125   NA     ``Jun-Dec"                 ``low surface brightness gal"
+CSS121006:232854+085452  2012B  23:28:54.52   +08:54:51.4   0.08      NA    125   NA     ``Jul-Dec"                 ``2 H, low surface brightness gal"
+
+
+# second tier
+SN2014dk                 2014B  00:28:11.96   +07:09:43.9   0.038     125   50    NA     ``Jul-Dec"                 ``unknown host/low surface brightness gal"
+iPTF13dkx                2013B  01:20:53.115  +03:20:23.65  0.03      100   75    NA     ``late Jul-Dec"            ``low surface brightness gal"
+PS1-13dkh                2013B  03:11:16.09   +15:42:58.3   0.03      125   75    NA     ``Aug-Jan"                 ``contamination"
+SN2012fr                 2012B  03:33:36.277  -36:07:35.15  0.005     NA    09    NA     ``Sept-Jan"                ``1 H only, probably in diffuse part of host galaxy"
+CSS130218:092354+385837  2013A  09:23:54.52   +38:58:36.8   0.05      NA    125   NA     ``Mar-early May, Oct-Jan"  ``3 H only, low surface brightness gal"
+SN2014J                  2014A  09:55:42.14   +69:40:26.0   0.00068   300   300   200    ``Mar-Jun, Oct-Jan"        ``heavy contamination"
+CSS140425:161024+470440  2014A  16:10:23.61   +47:04:40.3   0.03      150   75    NA     ``Mar-Sept, Jan"           ``low surface brightness gal"
+PTF11moy                 2011B  17:06:18.06   +38:32:19.9   0.06      50    50    NA     ``Mar-Sept, Jan"           ``1 LC pt, low surface brightness gal"
+iPTF13dkl                2013B  23:44:57.999  +03:23:40.07  0.04      50    50    NA     ``Jul-Dec"                 ``light contamination"
+
+
+# everything else
+LSQ13cmt                 2013B  01:02:41.95   -21:52:23.4   0.057     50    75    NA     ``Aug-Dec"
+CSS121009:011101-172841  2012B  01:11:01.091  -17:28:42.28  0.06      100   150   NA     ``Aug-Dec"
+SN2012fk                 2012B  02:30:52.081  +22:28:46.02  0.035     75    75    NA     ``Aug-Jan"
+PSNJ03034759+0024146     2014B  03:03:47.9    +00:24:14.6   0.04      75    75    NA     ``late Aug-Jan"
+LSQ12fmx                 2012B  03:12:52.144  -00:12:12.55  0.067     100   150   NA     ``late Aug-Jan"
+SN2011ha                 2011B  03:57:40.87   +10:09:55.2   0.094     50    75    NA     ``Sept-Jan"                ``1 J, 2 H"
+SN2013ar                 2013A  08:37:44.978  +49:28:32.88  0.06      125   125   NA     ``Mar-early May, Oct-Jan"
+CSS121114:090202+101800  2012B  09:02:02.420  +10:18:00.31  0.042     75    75    NA     ``Mar-Apr, Nov-Jan"
+CSS130218:092354+385837  2013A  09:23:54.52   +38:58:36.8   0.05      NA    125   NA     ``Mar-May, late Oct-Jan"   ``3 H only"
+PTF11qmo                 2011B  10:06:49.748  -07:41:12.39  0.055     75    75    NA     ``Mar-Apr, Dec-Jan"
+SN2012bh                 2012A  12:13:37.325  +46:29:00.34  0.02524   25    25    NA     ``Mar-Jun, Dec-Jan"        ``1 LC pt"
+SN2011fe                 2011B  14:03:05.80   +54:16:25.3   0.008     25    25    25     ``Mar-Jul, Dec-Jan"
+SN2013bs                 2013A  17:17:22.03   +41:04:00.2   0.0276    75    75    NA     ``Mar-Sept"
+CSS140501:170414+174839  2014A  17:04:13.69   +17:48:39.4   0.07      150   200   NA     ``Mar-Sept"
+ASASSN-14in              2014B  18:24:29.61   +52:26:32.83  0.033     75    75    NA     ``Mar-Oct"                 ``1 LC pt"
+SN2015G                  2015A  20:37:25.57   +66:07:11.68  0.004750  25    41    50     ``May-Nov"                 ``Ibn"
+SN2011gf                 2011B  21:12:24.302  -07:48:52.04  0.027     50    75    NA     ``Jun-Nov"     
+SN2011fs                 2011B  22:17:19.509  +35:34:49.94  0.021     75    75    25     ``Jun-Dec"
+SN2012em                 2012B  22:44:01.66   +15:51:49.3   0.038     100   125   NA     ``Jun-Dec"
+LSQ12fhs                 2012B  22:52:23.423  -20:36:53.35  0.033     75    125   NA     ``late Aug-early Dec"
+SN2011io                 2011B  23:02:47.617  +08:48:08.12  0.04      50    50    NA     ``Jun-Dec"                 ``1 LC pt"
+
+
+# only observable in January
+SN2011jh                 2012A  12:47:14.42   -10:03:47.2   0.00779   50    50    NA     ``Mar-May, Jan"            ``1 LC pt, heavy contamination"
+SN2011iy                 2012A  13:08:58.38   -15:31:04.0   0.00427   50    50    NA     ``Mar-May, Jan"            ``1 LC pt, heavy contamination"
+PTF11qri                 2011B  12:47:06.276  -06:19:49.46  0.055     75    75    NA     ``Mar-May, Jan"
+SN2012bo                 2012A  12:50:45.215  -14:16:07.69  0.02543   25    25    NA     ``Mar-May, Jan"            ``1 LC pt"
+SN2013cs                 2013A  13:15:14.839  -17:57:55.24  0.00924   25    25    25     ``Mar-May, Jan"  
+SN2013bt                 2013A  14:21:15.185  +61:34:15.42  0.0364    75    100   NA     ``Mar-Jul, Jan"
+PS1-14ra                 2014A  14:41:28.44   +09:25:58.7   0.03      75    50    NA     ``Mar-Jul, Jan"            ``light contamination"
+PSNJ15024996+4847062     2014A  15:02:49.96   +48:47:06.2   0.02614   75    50    75     ``Mar-Aug, Jan"            ``light contamination"
+SN2012bp                 2012A  16:18:12.451  +36:28:51.87  0.02829   25    50    NA     ``Mar-Sept, Jan"           ``1 LC pt"
+
+
+
